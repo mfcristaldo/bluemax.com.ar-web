@@ -112,7 +112,7 @@
             background: none;
             margin-bottom: 0;
         }
-        /* Estilos para móvil */
+        /* Estilos para móvil con letra más chica */
         @media (max-width: 700px) {
             header {
                 flex-direction: column;
@@ -121,11 +121,11 @@
                 text-align: left;
             }
             .titulo {
-                font-size: 1.07rem;
+                font-size: 0.85rem;
                 margin-bottom: 12px;
             }
             nav a {
-                font-size: 1.1rem;
+                font-size: 0.97rem;
             }
             .main-bg {
                 padding-bottom: 24px;
@@ -138,26 +138,60 @@
                 padding: 14px 2vw;
                 max-width: 97vw;
                 border-radius: 26px;
-                font-size: 0.98rem;
+                font-size: 0.86rem;
                 box-shadow: 0 4px 12px 0 #1d27343a;
-                /* más centrado y con margen abajo */
                 margin-left: auto;
                 margin-right: auto;
             }
             .card h1 {
-                font-size: 1.18rem;
-                margin-bottom: 14px;
+                font-size: 1rem;
+                margin-bottom: 10px;
             }
             .card p {
-                font-size: 1.01rem;
+                font-size: 0.83rem;
+            }
+            .card sup {
+                font-size: 0.7rem;
+            }
+            .link {
+                font-size: 0.92rem;
             }
             .footer-img {
                 min-width: 120px;
                 border-radius: 0 0 12px 12px;
             }
             .footer-text {
-                font-size: 0.94rem;
+                font-size: 0.83rem;
                 padding-bottom: 10px;
+            }
+        }
+        /* Botón flotante WhatsApp */
+        #wa-float {
+            position: fixed;
+            bottom: 18px;
+            right: 16px;
+            z-index: 9999;
+            background: none;
+            border-radius: 50%;
+            box-shadow: 0 2px 8px #1d9df277;
+            transition: transform 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #wa-float:hover {
+            transform: scale(1.1);
+        }
+        @media (max-width: 700px) {
+            #wa-float {
+                bottom: 12px;
+                right: 9px;
+                width: 44px;
+                height: 44px;
+            }
+            #wa-float img {
+                width: 44px !important;
+                height: 44px !important;
             }
         }
     </style>
@@ -195,5 +229,10 @@
             © 2025 BLUEMAX®. Todos los derechos reservados.
         </div>
     </footer>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/5491157294560" target="_blank" id="wa-float" aria-label="WhatsApp">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp" style="width:55px;height:55px;">
+    </a>
 </body>
 </html>

@@ -40,12 +40,16 @@
         nav a:hover {
             color: #0d88c8;
         }
-        main {
+        .main-bg {
+            min-height: 70vh;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: flex-start;
-            min-height: 70vh;
+            /* Imagen de fondo */
+            background: url('fondo.jpg') center top no-repeat;
+            background-size: cover;
+            padding-bottom: 40px;
         }
         .card {
             background: #fff;
@@ -123,7 +127,7 @@
         </nav>
     </header>
 
-    <main>
+    <div class="main-bg">
         <div class="card">
             <h1>Bienvenidos a FREEVIEW<sup>®</sup></h1>
             <p>Somos una empresa con más de 20 años en el mercado,<br>
@@ -139,7 +143,7 @@
                 <a class="link" href="https://g5ar.com.ar/" target="_blank">g5ar.com.ar</a>
             </p>
         </div>
-    </main>
+    </div>
 
     <footer>
         <img src="pie.png" alt="Pie de página" class="footer-img">

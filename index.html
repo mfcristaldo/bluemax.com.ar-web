@@ -112,11 +112,53 @@
             background: none;
             margin-bottom: 0;
         }
-        @media (max-width: 600px) {
-            header, .card { padding-left: 12px; padding-right: 12px; }
-            .card { padding: 20px 4vw; }
-            .card h1 { font-size: 1.3rem; }
-            .titulo { font-size: 0.97rem; }
+        /* Estilos para móvil */
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 18px 4vw 8px 4vw;
+                text-align: left;
+            }
+            .titulo {
+                font-size: 1.07rem;
+                margin-bottom: 12px;
+            }
+            nav a {
+                font-size: 1.1rem;
+            }
+            .main-bg {
+                padding-bottom: 24px;
+                min-height: unset;
+                justify-content: flex-start;
+                align-items: center;
+            }
+            .card {
+                margin-top: 32px;
+                padding: 14px 2vw;
+                max-width: 97vw;
+                border-radius: 26px;
+                font-size: 0.98rem;
+                box-shadow: 0 4px 12px 0 #1d27343a;
+                /* más centrado y con margen abajo */
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .card h1 {
+                font-size: 1.18rem;
+                margin-bottom: 14px;
+            }
+            .card p {
+                font-size: 1.01rem;
+            }
+            .footer-img {
+                min-width: 120px;
+                border-radius: 0 0 12px 12px;
+            }
+            .footer-text {
+                font-size: 0.94rem;
+                padding-bottom: 10px;
+            }
         }
     </style>
 </head>

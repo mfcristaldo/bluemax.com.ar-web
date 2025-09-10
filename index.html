@@ -11,7 +11,7 @@
             margin: 0;
             background: #f8fafb;
             font-family: 'Montserrat', Arial, sans-serif;
-            color: #232931;
+            color: #fff;
         }
         header {
             display: flex;
@@ -21,14 +21,11 @@
             background: #fff;
             box-shadow: 0 2px 8px #e3ecf8;
         }
-        .logo {
-            height: 48px;
-            margin-right: 32px;
-        }
         .titulo {
             font-size: 1.3rem;
             font-weight: 400;
             letter-spacing: 2px;
+            color: #232931;
         }
         nav a {
             color: #17b5ff;
@@ -46,43 +43,50 @@
             flex-direction: column;
             align-items: center;
             justify-content: flex-start;
-            /* Imagen de fondo */
             background: url('fondo.jpg') center top no-repeat;
             background-size: cover;
             padding-bottom: 40px;
         }
         .card {
-            background: #fff;
             margin-top: 48px;
             padding: 44px 40px;
-            max-width: 550px;
+            max-width: 650px;
             width: 100%;
-            box-shadow: 0 8px 36px 0 #e4eef6b9;
-            border-radius: 36px;
+            border-radius: 48px;
             text-align: center;
+            background: rgba(255,255,255,0.09);
+            box-shadow: 0 8px 36px 0 #1d27345e;
+            backdrop-filter: blur(12px) brightness(0.8);
+            -webkit-backdrop-filter: blur(12px) brightness(0.8);
+            color: #fff;
+            border: 1.5px solid rgba(255,255,255,0.19);
         }
         .card h1 {
             font-size: 2.1rem;
             margin-bottom: 26px;
             font-weight: 700;
-            color: #182239;
+            color: #fff;
         }
         .card sup {
             font-size: 1rem;
+            color: #fff;
         }
         .card p {
-            font-size: 1.15rem;
+            font-size: 1.18rem;
             line-height: 1.7;
             margin: 0 0 8px 0;
+            color: #fff;
+            font-weight: 400;
         }
         .link {
-            color: #17b5ff;
+            color: #45c6ff;
             text-decoration: none;
             font-weight: 700;
             font-size: 1.15rem;
         }
         .link:hover {
-            color: #1170a8;
+            color: #ffffff;
+            text-decoration: underline;
         }
         footer {
             margin-top: 56px;
@@ -118,10 +122,7 @@
 </head>
 <body>
     <header>
-        <div style="display: flex; align-items: center;">
-            <img src="logo.png" alt="Logo Freeview" class="logo">
-            <span class="titulo">FREEVIEW<sup>®</sup> | Lentes Multifocales Digitales</span>
-        </div>
+        <span class="titulo">FREEVIEW<sup>®</sup> | Lentes Multifocales Digitales</span>
         <nav>
             <a href="#">Home</a>
         </nav>
